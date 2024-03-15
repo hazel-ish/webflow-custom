@@ -3,6 +3,6 @@ document.addEventListener('click', function(event) {
     var clickedElementId = event.target.id;
     if (clickedElementId) {
         clickedElements.push(clickedElementId);
-        localStorage.setItem('clickedKeys', JSON.stringify(clickedElements));
+        localStorage.setItem('clickedKey', JSON.stringify(clickedElements));
     }
 });
