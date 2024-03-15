@@ -1,4 +1,5 @@
 document.addEventListener('click', function(event) {
+    console.log('event', event);
     var clickedElements = localStorage.getItem('clickedKey');
     console.log('clickedELements',typeof clickedElements);
     if(clickedElements==='' || clickedElements==null || clickedElements==undefined){
