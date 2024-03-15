@@ -1,6 +1,7 @@
 
 document.addEventListener('click', function(event) {
-    var clickedElement=event.target;
+console.log("CDN link working");
+var clickedElement=event.target;
 var clickedElementId = event.target.id;
 if (clickedElementId) {
-    localStorage.setItem('clickedKey', clickedElementId);}});
+localStorage.setItem('clickedKey', clickedElementId);}});
