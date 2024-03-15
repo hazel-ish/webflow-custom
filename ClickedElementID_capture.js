@@ -1,7 +1,7 @@
 document.addEventListener('click', function(event) {
     var clickedElements = localStorage.getItem('clickedKey');
     console.log('clickedELements',typeof clickedElements);
-    if(clickedElements==null || clickedElements==undefined){
+    if(clickedElements==='' || clickedElements==null || clickedElements==undefined){
         clickedElements=[];
     }else{
         clickedElements=JSON.parse(clickedElements);
