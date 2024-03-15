@@ -1,6 +1,6 @@
 document.addEventListener('click', function(event) {
     var clickedElements = localStorage.getItem('clickedKey');
-    console.log('clickedELements',clickedElements);
+    console.log('clickedELements',typeof clickedElements);
     if(clickedElements==null || clickedElements==undefined){
         clickedElements=[];
     }else{
