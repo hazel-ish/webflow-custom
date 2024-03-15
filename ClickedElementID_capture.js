@@ -1,5 +1,10 @@
 document.addEventListener('click', function(event) {
-    var clickedElements = JSON.parse(localStorage.getItem('clickedKey')) || [];
+    var clickedElements = localStorage.getItem('clickedKey');
+    if(clickedElements==null || clickedElements==undefined){
+        clickedElements=[];
+    }else{
+        clickedElements=JSON.parse(clickedElements);
+    }
     var clickedElementId = event.target.id;
     if (clickedElementId) {
         console.log('clickedElement',clickedElementId);
