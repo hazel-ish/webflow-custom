@@ -10,7 +10,7 @@ document.addEventListener('click', function(event) {
     var clickedElementId = event.target.id;
     if (clickedElementId) {
         console.log('clickedElement',clickedElementId);
-        if(clickedElementId!=='marketing-2' && clickedElementId!=='analytics-2' && clickedElementId!=='personalization-2' && clickedElementId!=='w-dropdown-toggle-0')
+        if(clickedElementId!=='name' && clickedElementId!=='radio' && clickedElementId!=='marketing-2' && clickedElementId!=='analytics-2' && clickedElementId!=='personalization-2' && clickedElementId!=='w-dropdown-toggle-0')
         clickedElements.push(clickedElementId);
         localStorage.setItem('clickedKey', JSON.stringify(clickedElements));
         console.log('Value set in local storage');
